@@ -3,12 +3,13 @@
 	"builds": [
 		{
 			"src": "src/index.ts",
-			"use": "@now/node",
+			"use": "@vercel/node",
 			"config": { "maxLambdaSize": "15mb" }
 		}
 	],
 	"routes": [
 		{ "src": "/static/(.*)", "dest": "/public/$1" },
 		{ "src": "/(.*)", "dest": "/src/index.ts" }
-	]
+	],
+	"includeFiles": ["src/portfolio.json"]
 }
