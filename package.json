@@ -1,0 +1,26 @@
+{
+	"name": "trade_neural",
+	"version": "1.0.0",
+	"main": "src/index.ts",
+	"scripts": {
+		"dev": "clear && npx tsc -b && node dist/index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@google/generative-ai": "^0.21.0",
+		"axios": "^1.7.7",
+		"cors": "^2.8.5",
+		"dotenv": "^16.4.5",
+		"express": "^4.21.1",
+		"fs": "^0.0.1-security",
+		"synaptic": "^1.1.4"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.17",
+		"@types/express": "^5.0.0",
+		"@types/synaptic": "^1.0.8"
+	}
+}
